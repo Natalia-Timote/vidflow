@@ -154,7 +154,7 @@ body {
 
 .side-bar {
     width: 240px;
-    position: fixed;
+    position: absolute;
     top: 76px;
 }
 
@@ -248,7 +248,7 @@ iframe{
     height: 62%;
 }
 
-.description-video .img-canal{
+.description-video .img-channel{
     border-radius: 100%;
     width: 40px;
     height: 40px;
