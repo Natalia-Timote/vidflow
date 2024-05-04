@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <link rel="stylesheet" href="./css/flexbox.css">
+        <title>VidFlow</title>
+        <link rel="shortcut icon" href="./img/Favicon.png" type="image/x-icon">
+    </head>
+<body>
+    <header>
+        <nav class="header__container">
+            <div class="logo__item">
+                <img src="./img/VidFlow--Logo-light-mode.png" alt="Logo do VidFlow">
+            </div>
+
+            <div class="header__search__item">
+                <form class="form__search">
+                    <input type="search" class="search__input" placeholder="Pesquisar">
+                    <img src="./img/topbar/keyboard.png" alt="Ícone de teclado" class="search__input-keyboard">
+                    <button class="search__btn">
+                        <img src="./img/topbar/search.png" alt="Ícone de lupa">
+                    </button>
+                    <button class="header__audio">
+                        <img src="./img/topbar/Mic.png" alt="Ícone de microfone">
+                    </button>
+                </form>
+            </div>
+
+            <div class="header__icons__item">
+                <a href="#" class="header__videos"></a>
+                <a href="#" class="header__apps"></a>
+                <a href="#" class="header__notifications"></a>
+                <a href="#" class="header__avatar"></a>
+                <label class="header__switch">
+                    <input type="checkbox" class="header__switch-input">
+                    <span class="header__switch-slider"></span>
+                </label>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <nav class="side-bar">
+            <section class="side-bar__main">
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/home.png" alt="Ícone de home">
+                    Início
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/explore.png" alt="Ícone de busca">
+                    Explorar
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/airplay.png" alt="Ícone de shorts">
+                    Shorts
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/subscriptions.png" alt="Ícone de inscrições">
+                    Inscrições
+                </a>
+                <hr class="side-bar__line">
+            </section>
+            
+            <section class="side-bar__options">
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/video_library.png" alt="Ícone da biblioteca">
+                    Biblioteca
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/history.png" alt="Ícone do histórico">
+                    Histórico
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/history_toggle_off.png" alt="Ícone de assistir mais tarde">
+                    Assistir mais tarde
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/thumb_up_alt.png" alt="Ícone de gostei"> 
+                    Marcados como gostei
+                </a>
+                <hr class="side-bar__line">
+            </section>
+
+            <section class="side-bar__subs">
+                <a class="side-bar__text">INSCRIÇÕES</a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/Avatar_Alura.png" alt="Avatar da Alura">
+                    Alura
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/Avatar_Gaveta.png" alt="Avatar do Gaveta">
+                    Gaveta
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/Avatar_Rafa.png" alt="Avatar da Rafaella Ballerini">
+                    Rafaella Ballerini
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/Avatar_Atila.png" alt="Avatar do Atila"> 
+                    Atila Iamarino
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/Avatar_Souto.png" alt="Avatar do Mario Souto"> 
+                    Mario Souto
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/Avatar_Jovem_Nerd.png" alt="Avatar do Jovem Nerd"> 
+                    Jovem Nerd
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/Avatar_Deschamps.png" alt="Avatar do Felipe Deschamps"> 
+                    Felipe Deschamps
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/keyboard_arrow_down.png" alt="Ícone de seta para baixo"> 
+                    Mostrar mais 2
+                </a>
+                <hr class="side-bar__line">
+            </section>
+
+            <section class="side-bar__more">
+                <a class="side-bar__text">MAIS DA PÁGINA</a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/ondemand_video.png" alt="Ícone de vídeos">
+                    Vídeos Premium
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/movie.png" alt="Ícone de filme">
+                    Filmes
+                </a>
+                <a href="#" class="side-bar__item">
+                    <img src="./img/sidebar/sports_esports.png" alt="Ícone de jogos">
+                    Jogos
+                </a>
+            </section>
+        </nav>
+
+        <section class="superior__section__container">
+            <hr class="superior__section__line">
+            <div class="superior__section__container-wrapper">
+                <a href="#" name="Tudo" class="superior__item">Tudo</a>
+                <a href="#" name="Debates" class="superior__item">Debates</a>
+                <a href="#" name="Ao vivo" class="superior__item">Ao vivo</a>
+                <a href="#" name="Podcasts" class="superior__item">Podcasts</a>
+                <a href="#" name="Front-end" class="superior__item">Front-end</a>
+                <a href="#" name="Mobile" class="superior__item">Mobile</a>
+                <a href="#" name="Data Science" class="superior__item">Data Science</a>
+                <a href="#" name="Apps" class="superior__item">Apps</a>
+                <a href="#" name="Programação" class="superior__item">Programação</a>
+                <a href="#" name="Inteligência Artificial" class="superior__item">Inteligência Artificial</a>
+                <a href="#" name="Inovação" class="superior__item">Inovação</a>
+            </div>
+            <label class="superior__slider">
+                <span><img src="./img/arrow_forward_ios.png" alt="Ícone de seta para direita"></span>
+            </label>
+            <hr class="superior__section__line">
+        </section>
+    </main>
+
+</body>
+</html>
