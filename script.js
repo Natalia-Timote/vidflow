@@ -16,6 +16,7 @@ async function searchShowVideos() {
                             <img class="img-channel" src="${video.imagem}" alt="Logo do canal">
                             <h3 class="title-video">${video.titulo}</h3>
                             <p class="title-channel">${video.descricao}</p>
+                            <p class="categoria" hidden>${video.categoria}</p>
                         </div>
                     </li>
                 `;
@@ -26,3 +27,47 @@ async function searchShowVideos() {
 }
 
 searchShowVideos();
+
+const searchBar = document.querySelector('.search__input');
+
+searchBar.addEventListener('input', filterSearch);
+
+function filterSearch() {
+    const videos = document.querySelectorAll('.videos__item');
+
+    if(searchBar.value != "") {
+        for(let video of videos) {
+            let title = video.querySelector('.title-video').textContent.toLowerCase();
+            let filterValue = searchBar.value.toLowerCase();
+
+            if(!title.includes(filterValue)) {
+                video.style.display = 'none';
+            } else {
+                video.style.display = 'block';
+            }
+        }
+    } else {
+        video.style.display = 'block';
+    }
+}
+
+const categoryBtn = document.querySelectorAll('.superior__item');
+
+categoryBtn.forEach((button) => {
+    let categoryName = button.getAttribute('name');
+    button.addEventListener('click', () => filterByCategory(categoryName));
+});
+
+function filterByCategory(filter) {
+    const videos = document.querySelectorAll('.videos__item');
+    for(let video of videos) {
+        let category = video.querySelector('.categoria').textContent.toLowerCase();
+        let filterValue = filter.toLowerCase();
+
+        if(!category.includes(filterValue) && filterValue != 'tudo') {
+            video.style.display = 'none';
+        } else {
+            video.style.display = 'block';
+        }
+    }
+}
