@@ -32,12 +32,6 @@ O objetivo foi aplicar conceitos de **requisições assíncronas, manipulação 
 
 Uma prévia das principais telas do **Vidflow**:
 
-**🌐 Acesse o Projeto Online**
-
-O projeto está disponível para visualização na **Vercel**. Clique no link abaixo para acessar:
-
-<a href="https://numero-secreto-pink-two.vercel.app/" target="_blank">![Static Badge](https://img.shields.io/badge/Vercel-project?style=for-the-badge&color=A91079)</a>
-
 **🎞️ Tela Inicial com Vídeos**
 
 Visualização da galeria de vídeos centralizada.
